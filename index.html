@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoftyLeon</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <!-- LOADER -->
+<div id="loader">
+    <div class="loader-content">
+
+        <img src="Assets/goku-kamehameha-gif-3.gif" class="goku" alt="Loading Character">
+
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+
+        <div class="percentage">0%</div>
+    </div>
+
+    <div class="welcome-text">
+        <span class="welcome">Welcome</span>
+        <span class="slash">/</span>
+        <span class="marhaba">Marhaba</span>
+    </div>
+</div>
+    <nav class="navbar">
+    <div class="logo-container">
+    <img src="Assets/profile.png" alt="Profile" class="profile-icon" id="profileIcon">
+    <span class="logo-text">LoftyLeon</span>
+</div>
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="social-icons">
+    <a href="https://linkedin.com/in/salman-mohammed-arif-387187284" target="_blank">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://instagram.com/salmannnnnnnnnnnnnnnnnn" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://twitter.com/yourprofile" target="_blank">
+      <i class="fab fa-x-twitter"></i>
+    </a>
+  </div>
+
+</nav>
+
+<header class="hero" id="home">
+
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="Assets/video.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-content">
+        <p class="hero-intro">Hello, I'm</p>
+
+        <h1 class="hero-name">Salman Mohammed Arif</h1>
+
+        <h2 class="hero-role">
+            Final-Year Computer Science Engineering Student
+        </h2>
+
+        <div class="hero-typewriter">
+            <span id="typed-text" class="typewriter-text"></span>
+             <span class="cursor">|</span>  
+        </div>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+    </div>
+
+</header>
+
+<div id="profileModal" class="profile-modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-image" src="Assets/profile.png" alt="Profile Large">
+</div>
+<section id="about" class="about-section">
+    <div class="about-container">
+        
+
+        <!-- LEFT: TEXT -->
+        <div class="about-text reveal">
+            <h2>About Me</h2>
+
+            <p>
+                I'm <strong>Salman</strong>, a final-year engineering student with a strong interest
+                in web development and interactive user experiences.
+                I enjoy building clean, responsive, and meaningful digital products
+                that solve real-world problems.
+            </p>
+
+            <p>
+                My core focus is on front-end development, where I combine
+                structure, design, and motion to create interfaces that feel
+                smooth, intuitive, and engaging.
+                I'm continuously learning and improving by building projects
+                rather than just following tutorials.
+            </p>
+
+            <p>
+                Alongside development, I also have a creative side.
+                I actively work on <strong>video editing and visual storytelling</strong>,
+                where I experiment with transitions, pacing, and effects.
+                This helps me bring a stronger sense of motion and aesthetics
+                into my web projects as well.
+            </p>
+
+            <p class="about-focus">
+                Currently, I'm focused on strengthening my skills,
+                building a solid project portfolio, and preparing myself
+                for industry-level opportunities.
+            </p>
+        </div>
+
+        <!-- RIGHT: CAROUSEL SLIDER -->
+        <div class="about-carousel reveal">
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <!-- SLIDE 1: VIDEO -->
+                    <div class="carousel-slide">
+                        <video class="carousel-media" autoplay muted loop playsinline>
+                            <source src="Assets/video1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <!-- SLIDE 2: IMAGE -->
+                    <div class="carousel-slide">
+                        <img src="Assets/salman.png" alt="Creative & Motion" class="carousel-media">
+                    </div>
+
+                    <!-- SLIDE 3: IMAGE -->
+                    <div class="carousel-slide">
+                        <img src="Assets/food1.png" alt="Problem Solving" class="carousel-media">
+                    </div>
+                </div>
+            </div>
+
+            <!-- CAROUSEL CONTROLS -->
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" aria-label="Previous slide">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="carousel-btn next" aria-label="Next slide">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="skills" class="skills-section reveal">
+    <div class="skills-container">
+        <h2>Skills & Expertise</h2>
+        <p class="section-subtitle">Click on any card to reveal details</p>
+
+        <div class="skills-grid">
+            <!-- SKILL 1: WEB DEVELOPMENT -->
+            <div class="skill-card">
+                <div class="skill-card-inner">
+                    <!-- FRONT -->
+                    <div class="skill-card-front">
+                        <div>
+                            <h3><span class="emoji">💻</span>Web Development</h3>
+                            <p>Building clean, responsive, and interactive web interfaces with a strong focus on usability, motion, and performance.</p>
+                        </div>
+                        <div class="click-hint">Click to see skills</div>
+                    </div>
+                    <!-- BACK -->
+                    <div class="skill-card-back">
+                        <h4>Technical Stack</h4>
+                        <ul>
+                            <li>HTML5 & Semantic Markup</li>
+                            <li>CSS3 (Animations, Flexbox, Grid)</li>
+                            <li>JavaScript (DOM, Events, Logic)</li>
+                            <li>Responsive Design & Mobile-First</li>
+                            <li>Modern Animations & Transitions</li>
+                            <li>Performance Optimization</li>
+                        </ul>
+                        <div class="flip-hint">Click again to flip back</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SKILL 2: VIDEO EDITING & MOTION -->
+            <div class="skill-card">
+                <div class="skill-card-inner">
+                    <!-- FRONT -->
+                    <div class="skill-card-front">
+                        <div>
+                            <h3><span class="emoji">🎬</span>Video Editing & Motion</h3>
+                            <p>Creating engaging edits with attention to pacing, transitions, and emotion — translating motion principles into web animations.</p>
+                        </div>
+                        <div class="click-hint">Click to see skills</div>
+                    </div>
+                    <!-- BACK -->
+                    <div class="skill-card-back">
+                        <h4>Creative Skills</h4>
+                        <ul>
+                            <li>Video Editing & Composition</li>
+                            <li>Motion Design & Pacing</li>
+                            <li>Transitions & Visual Effects</li>
+                            <li>Cinematic Storytelling</li>
+                            <li>Social Media & Short-form Content</li>
+                            <li>Audio-Visual Synchronization</li>
+                        </ul>
+                        <div class="flip-hint">Click again to flip back</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SKILL 3: DATA SCIENCE & ML -->
+            <div class="skill-card">
+                <div class="skill-card-inner">
+                    <!-- FRONT -->
+                    <div class="skill-card-front">
+                        <div>
+                            <h3><span class="emoji">🤖</span>Data Science & AI</h3>
+                            <p>Learning and applying ML concepts using Python, with a focus on real-world problem solving and applied AI.</p>
+                        </div>
+                        <div class="click-hint">Click to see skills</div>
+                    </div>
+                    <!-- BACK -->
+                    <div class="skill-card-back">
+                        <h4>In Progress</h4>
+                        <ul>
+                            <li>Python (Data Analysis & ML)</li>
+                            <li>Supervised Learning</li>
+                            <li>Unsupervised Learning</li>
+                            <li>Regression & Classification</li>
+                            <li>Data Preprocessing & EDA</li>
+                            <li>Applied AI for Real-World Use</li>
+                        </ul>
+                        <div class="flip-hint">Click again to flip back</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SKILL 4: MATHEMATICS & TEACHING -->
+            <div class="skill-card">
+                <div class="skill-card-inner">
+                    <!-- FRONT -->
+                    <div class="skill-card-front">
+                        <div>
+                            <h3><span class="emoji">🧠</span>Mathematics & Teaching</h3>
+                            <p>Strong mathematical foundation with experience tutoring and explaining complex concepts clearly and effectively.</p>
+                        </div>
+                        <div class="click-hint">Click to see skills</div>
+                    </div>
+                    <!-- BACK -->
+                    <div class="skill-card-back">
+                        <h4>Strengths</h4>
+                        <ul>
+                            <li>Advanced Mathematical Concepts</li>
+                            <li>Logical Thinking & Reasoning</li>
+                            <li>Tutoring & Mentoring</li>
+                            <li>Complex Problem Breaking</li>
+                            <li>Clear Communication</li>
+                            <li>Applied Math for ML & Algorithms</li>
+                        </ul>
+                        <div class="flip-hint">Click again to flip back</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SKILL 5: SOFTWARE ENGINEERING -->
+            <div class="skill-card">
+                <div class="skill-card-inner">
+                    <!-- FRONT -->
+                    <div class="skill-card-front">
+                        <div>
+                            <h3><span class="emoji">⚙️</span>Software Engineering</h3>
+                            <p>Clean code practices, version control, debugging, and project-based learning with a focus on documentation and iteration.</p>
+                        </div>
+                        <div class="click-hint">Click to see skills</div>
+                    </div>
+                    <!-- BACK -->
+                    <div class="skill-card-back">
+                        <h4>Best Practices</h4>
+                        <ul>
+                            <li>Git & GitHub (Version Control)</li>
+                            <li>Clean Code Principles</li>
+                            <li>Debugging & Testing</li>
+                            <li>Project-Based Learning</li>
+                            <li>Documentation & Comments</li>
+                            <li>Continuous Improvement</li>
+                        </ul>
+                        <div class="flip-hint">Click again to flip back</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SKILL 6: SOFT SKILLS -->
+            <div class="skill-card">
+                <div class="skill-card-inner">
+                    <!-- FRONT -->
+                    <div class="skill-card-front">
+                        <div>
+                            <h3><span class="emoji">🤝</span>Soft Skills</h3>
+                            <p>Self-driven learner with discipline, strong communication, creative problem-solving, and a passion for continuous growth.</p>
+                        </div>
+                        <div class="click-hint">Click to see skills</div>
+                    </div>
+                    <!-- BACK -->
+                    <div class="skill-card-back">
+                        <h4>Personal Qualities</h4>
+                        <ul>
+                            <li>Self-Driven Learner</li>
+                            <li>Discipline & Consistency</li>
+                            <li>Communication & Clarity</li>
+                            <li>Mentoring & Teaching</li>
+                            <li>Creative Problem Solving</li>
+                            <li>Growth Mindset</li>
+                        </ul>
+                        <div class="flip-hint">Click again to flip back</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ================================
+     PROJECTS SECTION
+     ================================ -->
+
+<section id="projects" class="projects-section reveal">
+    <div class="projects-container">
+        <h2>My Featured Projects</h2>
+        <p class="section-subtitle">Swipe to explore</p>
+
+        <!-- CAROUSEL CONTENT WITH SIDE NAVIGATION -->
+        <div class="carousel-wrapper">
+            <button class="carousel-nav prev" aria-label="Previous project">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+
+            <div class="carousel-center">
+                <div class="projects-track">
+                
+                <!-- PROJECT 1: BizLedger -->
+                <div class="project-card" data-project="0">
+                    <div class="project-layout">
+                        <div class="project-info">
+                            <h3>🔮 BizLedger</h3>
+                            <p class="project-subtitle">AI-Powered Voice Transaction Recording</p>
+                            <p class="project-description">
+                                An AI-driven application that simplifies business transaction recording using voice input. The system converts unstructured speech into structured financial data using speech-to-text and NLP techniques, intelligently extracting transaction details and automating SQL query generation.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">FastAPI</span>
+                                <span class="tech-badge">NLP</span>
+                                <span class="tech-badge">React Native</span>
+                                <span class="tech-badge">MySQL</span>
+                            </div>
+                            <a href="#" class="project-link">View Project →</a>
+                        </div>
+                        <div class="device-container phone-container">
+                            <div class="phone-frame">
+                                <div class="phone-notch"></div>
+                                <div class="phone-screen">
+                                    <img src="Assets/Bizledger/Bizledger.png" alt="BizLedger App Screenshot" class="project-image">
+                                </div>
+                                <div class="phone-home"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2: AgriSathi -->
+                <div class="project-card" data-project="1">
+                    <div class="project-layout">
+                        <div class="project-info">
+                            <h3>🌾 AgriSathi</h3>
+                            <p class="project-subtitle">USSD-Based Smart Agriculture Advisory</p>
+                            <p class="project-description">
+                                A USSD-based agricultural advisory platform for farmers with limited internet access. The system provides crop prices, weather updates, and farming guidance through simple dial-based interactions, processing requests using rule-based and data-driven decision mechanisms.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Flask</span>
+                                <span class="tech-badge">USSD</span>
+                                <span class="tech-badge">SQLite</span>
+                                <span class="tech-badge">Data APIs</span>
+                            </div>
+                            <a href="#" class="project-link">View Project →</a>
+                        </div>
+                        <div class="device-container laptop-container">
+                            <div class="laptop-frame">
+                                <div class="laptop-top"></div>
+                                <div class="laptop-screen">
+                                    <img src="Assets/AgriSathi/AGr.png" alt="AgriSathi Dashboard" class="project-image">
+                                </div>
+                                <div class="laptop-stand"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3: DeepCrypt -->
+                <div class="project-card" data-project="2">
+                    <div class="project-layout">
+                        <div class="project-info">
+                            <h3>📊 DeepCrypt</h3>
+                            <p class="project-subtitle">Crypto Data Analytics & Applied AI</p>
+                            <p class="project-description">
+                                A cryptocurrency analytics platform analyzing real-time and historical market data with interactive visualizations. Features exploratory data analysis for price trends and crypto asset comparison, with an AI-assisted chatbot to guide users through key metrics.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">Chart.js</span>
+                                <span class="tech-badge">CoinGecko API</span>
+                                <span class="tech-badge">Framer Motion</span>
+                                <span class="tech-badge">Clerk Auth</span>
+                            </div>
+                            <a href="#" class="project-link">View Project →</a>
+                        </div>
+                        <div class="device-container laptop-container">
+                            <div class="laptop-frame">
+                                <div class="laptop-top"></div>
+                                <div class="laptop-screen">
+                                    <img src="Assets/DeepCrypt/Deepcrypt.png" alt="DeepCrypt Analytics" class="project-image">
+                                </div>
+                                <div class="laptop-stand"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 4: Pizzap -->
+                <div class="project-card" data-project="3">
+                    <div class="project-layout">
+                        <div class="project-info">
+                            <h3>🍕 Pizzap</h3>
+                            <p class="project-subtitle">Custom Pizza Ordering & Design</p>
+                            <p class="project-description">
+                                A mobile application concept for interactive pizza customization with real-time visual feedback. Users can select crusts, toppings, sauces, and sizes, experiencing smooth interaction flows designed for scalability and user-centric design.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">React Native</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">UI Design</span>
+                                <span class="tech-badge">State Management</span>
+                                <span class="tech-badge">API Integration</span>
+                            </div>
+                            <a href="#" class="project-link">View Project →</a>
+                        </div>
+                        <div class="device-container phone-container">
+                            <div class="phone-frame">
+                                <div class="phone-notch"></div>
+                                <div class="phone-screen">
+                                    <img src="Assets/Pizzap/soon.png" alt="Pizzap App Screenshot" class="project-image">
+                                </div>
+                                <div class="phone-home"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CAROUSEL INDICATORS (Inside carousel-center) -->
+            <div class="carousel-indicators">
+                <span class="indicator active" data-index="0"></span>
+                <span class="indicator" data-index="1"></span>
+                <span class="indicator" data-index="2"></span>
+                <span class="indicator" data-index="3"></span>
+            </div>
+        </div>
+
+            <button class="carousel-nav next" aria-label="Next project">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- ================================
+     PROJECT VIEWER MODAL
+     ================================ -->
+
+<div id="projectModal" class="project-modal">
+    <div class="modal-content">
+        <button class="modal-close" aria-label="Close modal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+
+        <div class="modal-device-wrapper">
+            <!-- Device mockup will be inserted here -->
+            <div id="modalDeviceContainer"></div>
+        </div>
+
+        <div class="modal-info">
+            <h3 id="modalProjectTitle"></h3>
+            <div class="modal-image-controls">
+                <button class="modal-image-prev" aria-label="Previous image">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <span class="modal-image-counter">
+                    <span class="current">1</span> / <span class="total">4</span>
+                </span>
+                <button class="modal-image-next" aria-label="Next image">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<!-- ================================
+     CONTACT SECTION
+================================ -->
+
+<section id="contact" class="contact-section reveal">
+    <div class="contact-container">
+
+        <!-- LEFT SIDE -->
+        <div class="contact-left">
+            <h2 class="contact-title">Get in Touch</h2>
+
+            <p class="contact-subtitle">
+                I'd like to hear from you!
+            </p>
+
+            <p class="contact-description">
+                If you have any inquiries or just want to say hi, 
+                please use the contact form!
+            </p>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <a href="mailto:salmanmohammedarif@gmail.com">
+                        salmanmohammedarif@gmail.com
+                    </a>
+                </div>
+
+                <!-- Download Resume Button -->
+                <a href="Assets/resume.pdf" download="Salman_Mohammed_Arif_Resume.pdf" class="download-resume-btn">
+                    <span class="download-icon">
+                        <i class="fas fa-download"></i>
+                    </span>
+                    <span class="download-text">Download Resume</span>
+                </a>
+
+                <!-- Social Icons -->
+                <div class="contact-social">
+                    <a href="https://linkedin.com/in/salman-mohammed-arif-387187284" target="_blank">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://instagram.com/salmannnnnnnnnnnnnnnnnn" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://twitter.com/yourprofile" target="_blank">
+      <i class="fab fa-x-twitter"></i>
+    </a>
+                </div>
+            </div>
+        </div>
+
+       <!-- RIGHT SIDE (FORM) -->
+        <div class="contact-right">
+            <form class="contact-form">
+
+                <!-- Name Row -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <!-- Message -->
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+
+                <!-- Button -->
+                <div class="form-button">
+                    <button type="submit" class="contact-btn">
+                        Send
+                        </button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
