@@ -593,43 +593,53 @@
         </div>
 
        <!-- RIGHT SIDE (FORM) -->
-        <div class="contact-right">
-            <form class="contact-form">
+       <div class="contact-right">
+  <form
+    class="contact-form"
+    id="contactForm"
+    name="contact"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+  >
 
-                <!-- Name Row -->
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" name="firstName" required>
-                    </div>
+    <!-- REQUIRED for Netlify -->
+    <input type="hidden" name="form-name" value="contact">
+    <input type="hidden" name="bot-field">
 
-                    <div class="form-group">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName" name="lastName" required>
-                    </div>
-                </div>
+    <!-- Name Row -->
+    <div class="form-row">
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" required>
+      </div>
 
-                <!-- Email -->
-                <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" required>
+      </div>
+    </div>
 
-                <!-- Message -->
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5"></textarea>
-                </div>
+    <!-- Email -->
+    <div class="form-group">
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required>
+    </div>
 
-                <!-- Button -->
-                <div class="form-button">
-                    <button type="submit" class="contact-btn">
-                        Send
-                        </button>
-                </div>
+    <!-- Message -->
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
 
-            </form>
-        </div>
+    <!-- Button -->
+    <div class="form-button">
+      <button type="submit" class="contact-btn">Send</button>
+    </div>
+
+  </form>
+</div>
+
 
     </div>
 </section>

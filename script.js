@@ -557,3 +557,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
     typeEffect();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+
+  if (!form) return;
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // ⛔ stop reload
+
+    const formData = new FormData(form);
+
+    fetch("/", {
+      method: "POST",
+      body: formData
+    })
+      .then(() => {
+        alert("✅ Message sent successfully!");
+        form.reset();
+      })
+      .catch(() => {
+        alert("❌ Something went wrong. Please try again.");
+      });
+  });
+});
