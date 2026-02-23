@@ -560,26 +560,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contactForm");
+  const status = document.getElementById("form-status");
+
   if (!form) return;
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
+    const recaptcha = document.querySelector(
+      'textarea[name="g-recaptcha-response"]'
+    );
+
+    // ✅ Check if reCAPTCHA completed
+    if (!recaptcha || recaptcha.value.trim() === "") {
+      alert("⚠️ Please verify that you are human.");
+      return;
+    }
+
     const formData = new FormData(form);
 
     try {
-      await fetch(form.getAttribute("action") || "/", {
+      await fetch("/", {
         method: "POST",
         body: formData,
-        headers: {
-          "Accept": "application/json"
-        }
+        headers: { "Accept": "application/json" }
       });
 
       alert("✅ Message sent successfully!");
       form.reset();
     } catch (err) {
-      alert("❌ Failed to send message. Try again.");
+      alert("❌ Something went wrong. Please try again.");
     }
   });
 });
