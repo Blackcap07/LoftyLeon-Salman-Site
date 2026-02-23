@@ -558,28 +558,28 @@ document.addEventListener("DOMContentLoaded", () => {
     typeEffect();
 });
 
-/*
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contactForm");
-
   if (!form) return;
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault(); // ⛔ stop reload
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
 
     const formData = new FormData(form);
 
-    fetch("/", {
-      method: "POST",
-      body: formData
-    })
-      .then(() => {
-        alert("✅ Message sent successfully!");
-        form.reset();
-      })
-      .catch(() => {
-        alert("❌ Something went wrong. Please try again.");
+    try {
+      await fetch(form.getAttribute("action") || "/", {
+        method: "POST",
+        body: formData,
+        headers: {
+          "Accept": "application/json"
+        }
       });
+
+      alert("✅ Message sent successfully!");
+      form.reset();
+    } catch (err) {
+      alert("❌ Failed to send message. Try again.");
+    }
   });
 });
-*/
