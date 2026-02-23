@@ -558,6 +558,7 @@ document.addEventListener("DOMContentLoaded", () => {
     typeEffect();
 });
 
+/*
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contactForm");
 
@@ -581,3 +582,4 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 });
+*/
