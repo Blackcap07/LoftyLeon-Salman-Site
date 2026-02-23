@@ -583,3 +583,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+window.recaptchaCallback = function () {
+  const btn = document.querySelector(".contact-btn");
+  if (btn) btn.disabled = false;
+};
