@@ -346,11 +346,16 @@ document.addEventListener("DOMContentLoaded", function() {
             images: ["Assets/Deepcrypt/1.png", "Assets/Deepcrypt/2.png", "Assets/Deepcrypt/3.png", "Assets/Deepcrypt/4.png"]
         },
         {
-            id: 3,
-            name: "🍕 Pizzap",
-            type: "phone",  // Mobile app
-            images: ["Assets/Pizzap/1.png", "Assets/Pizzap/1.png", "Assets/Pizzap/1.png", "Assets/Pizzap/1.png"]
-        }
+    id: 3,
+    name: "✈️ JourneyIt",
+    type: "laptop",
+    images: [
+        "Assets/JourneyIt/1.png",
+        "Assets/JourneyIt/2.png",
+        "Assets/JourneyIt/3.png",
+        "Assets/JourneyIt/4.png"
+    ]
+}
     ];
 
     const modal = document.getElementById("projectModal");
